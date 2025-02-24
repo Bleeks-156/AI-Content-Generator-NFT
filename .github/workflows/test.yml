@@ -28,11 +28,9 @@ jobs:
       - name: Install Foundry
         run: |
           curl -L https://foundry.paradigm.xyz | bash
-          echo 'export PATH="$HOME/.foundry/bin:$PATH"' >> ~/.bashrc
-          echo 'source $HOME/.bashrc' >> ~/.profile
-          source ~/.bashrc
-          source ~/.profile
-          $HOME/.foundry/bin/foundryup
+          echo 'export PATH="$HOME/.foundry/bin:$PATH"' >> $HOME/.bashrc
+          source $HOME/.bashrc
+          bash -c "source $HOME/.bashrc && foundryup"
 
       - name: Verify Foundry Installation
         run: |
