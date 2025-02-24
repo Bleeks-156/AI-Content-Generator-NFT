@@ -1,105 +1,37 @@
-## AI-Content-Generated NFT
+# 🎨 AI-Content-Generated NFT  
 
+![Home Page](./assets/home.png)  
 
+## ✨ Features  
 
-## Features
+- **AI-Generated NFTs** – Create unique NFTs through AI-powered content generation.  
+- **Smart Contract Integration** – Developed with **Foundry** for contract management.  
+- **IPFS Storage** – Securely store AI-generated content with **decentralized storage**.  
+- **MetaMask Authentication** – Seamless blockchain interactions.  
+- **ERC-721 Standard** – NFTs follow the **ERC-721** minting standard.  
 
-- AI-Generated NFTs: Users can create unique NFTs through AI-driven content generation.
+## 🛠 Tech Stack  
 
-- Smart Contract Integration: Foundry is used for contract development, testing, and deployment.
+- **Solidity** – Smart contract development  
+- **Foundry** – Ethereum development framework  
+- **React.js** – Frontend interface  
+- **Ethers.js** – Blockchain interactions  
+- **IPFS/Pinata** – Decentralized storage  
+- **MetaMask** – Wallet authentication  
 
-- IPFS Storage: AI-generated content is securely stored using decentralized storage solutions.
+## 🔥 Foundry Components  
 
-- MetaMask Authentication: Seamless user authentication and blockchain interaction.
+- **Forge** – Ethereum testing framework  
+- **Cast** – Interact with smart contracts and blockchain data  
+- **Anvil** – Local Ethereum node  
+- **Chisel** – Solidity REPL  
 
-- ERC-721 Standard: NFTs are minted following the ERC-721 standard.
+## 📜 Documentation  
 
-  ## Features
+📖 [Foundry Docs](https://book.getfoundry.sh/)  
 
-- Solidity: Smart contract development
+## 🛠 Usage  
 
-- Foundry: Ethereum development framework
-
-- React.js: Frontend interface
-
-- Ethers.js: Blockchain interactions
-
-- IPFS/Pinata: Decentralized storage
-
-- MetaMask: Wallet authentication
-
-  Foundry is a blazing fast, portable, and modular toolkit for Ethereum application development written in Rust.
-
-## Foundry consists of:
-
-Forge: Ethereum testing framework (like Truffle, Hardhat, and DappTools).
-
-Cast: Swiss army knife for interacting with EVM smart contracts, sending transactions, and getting chain data.
-
-Anvil: Local Ethereum node, akin to Ganache, Hardhat Network.
-
-Chisel: Fast, utilitarian, and verbose Solidity REPL.
-
-
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
+### 🏗 Build  
 ```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-```
-## Frontend
-```shell
-$ cd frontend/my-dapp
-$ npm start
-
-$ cast --help
-```
+forge build
