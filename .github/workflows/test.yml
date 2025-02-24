@@ -28,10 +28,15 @@ jobs:
       - name: Install Foundry
         run: |
           curl -L https://foundry.paradigm.xyz | bash
+          echo 'export PATH="$HOME/.foundry/bin:$PATH"' >> ~/.bashrc
+          source ~/.bashrc
           foundryup
 
       - name: Verify Foundry Installation
-        run: forge --version
+        run: |
+          echo "PATH: $PATH"
+          ls -la $HOME/.foundry/bin
+          forge --version
 
       - name: Build Project
         run: forge build --sizes
